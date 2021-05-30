@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text">20dp</dimen>
+    <dimen name="text_size">40dp</dimen>
+    <dimen name="text_size_input">30dp</dimen>
+    <dimen name="textView_margin">8dp</dimen>
+    <dimen name="button_margin">4dp</dimen>
+    <dimen name="text_size_setting">8dp</dimen>
+</resources>

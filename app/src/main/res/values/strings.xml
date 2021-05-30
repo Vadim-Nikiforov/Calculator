@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">НеДоКакулятор</string>
+    <string name="settings">настройки</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="_point">.</string>
+    <string name="equals">=</string>
+    <string name="sign">+/-</string>
+    <string name="clear_all">CA</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="division">/</string>
+    <string name="multiplication">*</string>
+    <string name="clear">С</string>
+    <string name="back">назад</string>
+    <string name="switch_dark">Тёмная тема</string>
+    <string name="black">синий курсив</string>
+    <string name="pink">розовый</string>
+    <string name="blue">синий</string>
+    <string name="dark">тёмный</string>
+
+</resources>

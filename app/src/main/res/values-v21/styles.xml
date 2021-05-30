@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons_styles.actions">
+        <item name="android:backgroundTint">@color/backgroundTint_red</item>
+    </style>
+
+    <style name="buttons_styles.number">
+        <item name="android:backgroundTint">@color/background_blue</item>
+    </style>
+
+</resources>

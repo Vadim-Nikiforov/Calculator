@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CalculatorCastom" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0F00B6</item>
+        <item name="colorPrimaryDark">#262626</item>
+        <item name="colorAccent">#4C0000</item>
+    </style>
+
+    <style name="black" parent="Theme.CalculatorCastom">
+        <item name="android:textColor">@color/design_default_color_primary</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryDark">#b0003a</item>
+        <item name="colorAccent">#ff6090</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents">
+    </style>
+
+
+    <style name="buttons_styles">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="buttons_styles.actions">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/backgroundTint_red</item>
+    </style>
+
+    <style name="buttons_styles.number">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/background_blue</item>
+    </style>
+
+    <style name="radio_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>
