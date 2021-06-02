@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private SaveData saveData;
     String textSaveData;
 
-    Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnAddition, btnSubtraction, btnMultiply, btnDivision, btnSign, btnEqual, btnClear, btnClearAll, btnDot, btnSettings;
+    Button  btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnAddition, btnSubtraction,
+            btnMultiply, btnDivision, btnEqual, btnClear, btnClearAll, btnDot, btnSettings;
+
     TextView textInput, textOutput;
     String process;
 
@@ -73,14 +75,6 @@ public class MainActivity extends AppCompatActivity {
         return sharedPref.getInt(appTheme, codeStyle);
     }
 
-    // Сохранение настроек
-    private void setAppTheme(int codeStyle) {
-        SharedPreferences sharedPref = getSharedPreferences(nameSharedPreference, MODE_PRIVATE);
-        // Настройки сохраняются посредством специального класса editor.
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt(appTheme, codeStyle);
-        editor.apply();
-    }
     private int codeStyleToStyleId(int codeStyle) {
         switch (codeStyle) {
             case appThemeCodeStyle:
@@ -111,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         btnSubtraction = findViewById(R.id.button_subtraction);
         btnDivision = findViewById(R.id.button_division);
         btnMultiply = findViewById(R.id.button_multiplication);
-        btnSign = findViewById(R.id.button_sign);
 
         btnEqual = findViewById(R.id.button_equals);
 
@@ -135,11 +128,10 @@ public class MainActivity extends AppCompatActivity {
         btnClearAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textInput.setText("");
-                textOutput.setText("");
+                textInput.setText(" ");
+                textOutput.setText(" ");
             }
         });
-
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -266,14 +258,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 process = textInput.getText().toString();
                 textInput.setText(process + ".");
-            }
-        });
-
-        btnSign.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                process = textInput.getText().toString();
-                textInput.setText(process + "+/-");
             }
         });
 
