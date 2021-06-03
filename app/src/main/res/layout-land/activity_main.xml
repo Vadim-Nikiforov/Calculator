@@ -97,14 +97,16 @@
                     android:text="@string/clear" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button_sign"
-                    style="@style/buttons_styles.actions"
-                    android:text="@string/sign" />
-
-                <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_clear_all"
                     style="@style/buttons_styles.actions"
                     android:text="@string/clear_all" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_settings"
+                    style="@style/buttons_styles.actions"
+                    android:text="@string/settings"
+                    android:textSize="@dimen/text_size_setting"
+                    tools:ignore="SpUsage" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_addition"
@@ -216,14 +218,9 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_equals"
                     style="@style/buttons_styles.actions"
-                    android:text="@string/equals" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button_settings"
-                    style="@style/buttons_styles.actions"
-                    android:text="@string/settings"
-                    android:textSize="@dimen/text_size_setting"
-                    tools:ignore="SpUsage" />
+                    android:text="@string/equals"
+                    android:layout_weight="2"
+                    android:layout_marginEnd="12dp"/>
 
             </LinearLayout>
         </LinearLayout>

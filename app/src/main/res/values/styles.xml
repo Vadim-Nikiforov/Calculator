@@ -22,7 +22,6 @@
     <style name="AppThemeDark" parent="Theme.MaterialComponents">
     </style>
 
-
     <style name="buttons_styles">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>

@@ -23,7 +23,7 @@ public class Settings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(getAppTheme(R.style.black));
+        setTheme(getAppTheme());
         setContentView(R.layout.activity_settings);
         initThemeChooser();
 
@@ -52,8 +52,8 @@ public class Settings extends AppCompatActivity {
         });
     }
 
-    private int getAppTheme(int codeStyle) {
-        return codeStyleToStyleId(getCodeStyle(codeStyle));
+    private int getAppTheme() {
+        return codeStyleToStyleId(getCodeStyle(R.style.black));
     }
 
     // Чтение настроек, параметр «тема»
